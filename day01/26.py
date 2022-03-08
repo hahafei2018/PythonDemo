@@ -12,11 +12,12 @@
 
 
 list1 = []
-for i in range(2, 11):
+for i in range(2, 1001):
     list1.append(i)
 
-# for num in list1:
-for num in range(2, 11):
+
+for num in list1[::1]:
+# for num in range(2, 1001):
     for j in range(2, num):
         if num % j == 0:
             list1.remove(num)
